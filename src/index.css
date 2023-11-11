@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.background {
+  background-image: url('../public/images/sunset.jpg');
+  background-size: cover;
+}
+
+.search_result {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding-left: 1rem/* 16px */;
+  padding-right: 1rem/* 16px */;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  line-height: 48px;
+
+}
+
+.search_result:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  cursor: pointer;
+}
+
+.opacity-background {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.opacity-weather-data {
+  background-color: rgba(187, 238, 255, 0.25);
+}
